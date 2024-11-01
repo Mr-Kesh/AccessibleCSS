@@ -75,8 +75,17 @@ h6 {
 }
 
 
+.nav ul li a {
+    color: white;
+    transition: 0.3s; 
+}
+
+
 .nav ul li a:hover {
-    color: #5a2eb5;
+    color: white; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
+                 0 0 15px rgba(255, 255, 255, 0.6), 
+                 0 0 25px rgba(255, 255, 255, 0.4); 
 }
 
 
@@ -94,6 +103,14 @@ code {
 aside ul li a:hover {
     color: #5a2eb5;
 }
+
+
+ul li > details {
+    color: black;
+    margin-left: -21px;
+    margin-bottom: -2px;
+}
+
 
 
 summary {
