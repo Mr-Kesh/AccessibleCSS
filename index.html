@@ -16,8 +16,8 @@
     <title>Typography Blog Post</title>
 </head>
 
-<body aria-label="page-title">
-    <nav class="nav" aria-label="Main Navigation">
+<body>
+    <nav class="nav">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -26,23 +26,22 @@
     </nav>
 
     <header class="hero">
-        <h1>A Blog Post</h1>
-        <p>Welcome to a comprehensive guide on typography and web design!</p>
-        <hr>
+        <h1>Accessibility in Web Design</h1>
+        <p>This is a comprehensive guide on accessibility in web design!</p>
+        <hr class="white-hr">
     </header>
 
     <div class="container">
         <aside class="aside-left">
             <h4>Navigation</h4>
+
             <ul>
                 <li>
                     <details>
-                        <summary>A New Section</summary>
+                        <summary><b>Best Practices for Accessbility in Web Design</b></summary>
                         <ul>
-                            <li><a href="#newsection">A New Section</a></li>
-                            <li><a href="#heading4">Heading 4</a></li>
-                            <li><a href="#heading5">Heading 5</a></li>
-                            <li><a href="#heading6">Heading 6</a></li>
+                            <li><a href="#best-practices">Best Practices for Accessbility in Web Design</a></li>
+
                         </ul>
                     </details>
                 </li>
@@ -51,12 +50,12 @@
             <ul>
                 <li>
                     <details>
-                        <summary>Common Font Sizing Approaches</summary>
+                        <summary><b>Fundamentals of Accessible Design</b></summary>
                         <ul>
-                            <li><a href="#pixels">px (pixels)</a></li>
-                            <li><a href="#em">em</a></li>
-                            <li><a href="#rem">rem (root em)</a></li>
-                            <li><a href="#fontsize">Common Font Sizing Approaches</a></li>
+                            <li><a href="#keyboard-navigation">Keyboard Navigation</a></li>
+                            <li><a href="#color-contrast">Color Contrast</a></li>
+                            <li><a href="#alternative-text">Alternative Text</a></li>
+                            <li><a href="#aria-roles-attributes">ARIA Roles and Attributes</a></li>
                         </ul>
                     </details>
                 </li>
@@ -65,134 +64,139 @@
             <ul>
                 <li>
                     <details>
-                        <summary>Which one do I use?</summary>
+                        <summary><b>Accessible Text and Layout Techniques</b></summary>
                         <ul>
-                            <li><a href="#usewhich">Which one do I use?</a></li>
+                            <li><a href="#accessible-font-size">Accessible Font Size</a></li>
+                            <li><a href="#relative-units">Relative Units for Accessibility</a></li>
+                            <li><a href="#rem-scaling">Rem for Consistent Scaling</a></li>
                         </ul>
                     </details>
                 </li>
             </ul>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><b>Which Approach is Best for Accessibility?</b></summary>
+                        <ul>
+                            <li><a href="#best-approach">Which Approach is Best for Accessibility?</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+
         </aside>
 
         <main class="content">
-            <p class="info">12.31.2050 | <code><span>ALL ABOUT CSS BLOG</span></code></p>
-            <h2 class="section">All About Typography</h2>
+            <p class="info">11.01.2024 | <code><span>ACCESSIBILITY IN WEB DESIGN</span></code></p>
+            <h2 class="section" id="best-practices">Best Practices for Accessibility in Web Design</h2>
             <p class="headline">
-                Headlines, like this one, are great ways to quickly capture the reader's attention, to
-                give them a summary, intro, or other important information in a web page. You can use
-                <code>text-transform: uppercase;</code> to make a whole body of text uppercase using CSS if you really
-                need to grab attention!
+                Accessibility in web design ensures that everyone, including people with disabilities, can use and
+                navigate websites effectively. Using accessible design practices makes the web more inclusive and
+                improves user experience for all.
             </p>
             <p>
-                Okay, now that we're done screaming in the headline in all caps (which you should do sparingly) - it's
-                time to chat more about other components of typography. You'll notice that we chose a nice serif font
-                for our
-                headings, and a nice sans-serif font for our body text. This is intentional! Serif font faces are
-                generally considered pretty inaccessible as a body text style, since at smaller sizes it's much more
-                difficult to
-                visually differentiate the characters from one another. At large font sizes, such as those seen in most
-                headings, serif fonts are considered fine, since the larger style makes it easier to see where serif
-                characters start and where they end.
+                One of the first steps in accessible design is choosing fonts and colors wisely. High contrast between
+                text and background is essential for readability, especially for users with visual impairments.
+                Additionally, sans-serif fonts are often preferred for body text because they are easier to read at
+                smaller sizes, whereas serif fonts can be used for headings where readability is less affected.
             </p>
             <p>
-                But wait! What if you want more than just normal text on your page? Another common thing you might see
-                in
-                web pages are quotes. To make quotes, we can use the <code>blockquote</code> element and style it
-                accordingly, so it stands out a bit as a non-body text quote.
+                Another important aspect of accessibility is providing alternative text for images. Alternative (alt)
+                text ensures that users with screen readers can understand the content and purpose of images. It’s also
+                helpful to include descriptive labels and instructions for all interactive elements, so users with
+                visual or cognitive impairments can navigate the website smoothly.
             </p>
-            <blockquote class="quote">"This is a quote - you probably knew that at a glance since we gave it some nice
-                styling. Pretty nice, huh? A great lesson in User Experience Design, where we take special care to
-                implement our web page in a way that makes it pleasant and intuitive for our users/readers.
-                Differentiating our
-                different typography components visually makes information much more organized and easier to digest for
-                our users." <cite>– A wise person</cite>
+
+            <blockquote class="quote">"Accessibility is not a feature, it’s a social trend. Accessible websites cater to
+                a broader audience, improve SEO, and demonstrate a commitment to inclusivity. Web design that
+                prioritizes accessibility is design that prioritizes people."
+                <p><cite>– A web accessibility advocate</cite></p>
             </blockquote>
 
             <hr>
-            <h3 id="newsection" class="section">A New Section</h3>
+
+
+            <h2 class="section">Fundamentals of Accessible Design</h2>
+            <h3 id="keyboard-navigation" class="subsection">Keyboard Navigation</h3>
             <p>
-                And just like that, we've got a new section of content separated by a <code>hr</code> element (a
-                'horizontal rule' or a divider) and a new heading. Isn't putting content together fun?
+                Many users rely on keyboard navigation, so it's essential to ensure that every interactive element, like
+                links and buttons, can be accessed and used via keyboard alone. Adding a visible focus state to each
+                interactive element highlights where the user is on the page, making navigation more intuitive.
             </p>
             <p>
-                Notice as well that when we entered in the <code>H3</code> content, it was all lowercase, but now it's
-                in
-                a nice Title Case, where the first letter of each word is capitalized. We did that with CSS! Using
-                <code>text-transform: capitalize;</code> we can implement title cased content.
+                When creating content sections, use semantic HTML elements such as <code>header</code>,
+                <code>main</code>, <code>footer</code>, and appropriate heading levels (<code>H1</code>,
+                <code>H2</code>, etc.). This helps screen readers understand the document structure and allows users to
+                navigate through sections with ease.
             </p>
 
-            <h4 id="heading4">Heading 4</h4>
+            <h3 id="color-contrast" class="subsection">Color Contrast</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae est dapibus, viverra metus ac,
-                fermentum libero. Integer lobortis enim ac arcu malesuada ultrices. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
+                Color contrast is crucial for users with visual impairments. A good rule of thumb is to use a contrast
+                ratio of at least 4.5:1 for normal text and 3:1 for large text. Tools like the WebAIM Contrast Checker
+                can help ensure your color choices meet accessibility standards.
             </p>
 
-            <h5 id="heading5">Heading 5</h5>
+            <h3 id="alternative-text" class="subsection">Alternative Text</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae est dapibus, viverra metus ac,
-                fermentum libero. Integer lobortis enim ac arcu malesuada ultrices. Lorem ipsum dolor sit amet,
-                consectetur
-                adipiscing elit.
-            </p>
-            <h6 id="heading6">Heading 6</h6>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae est dapibus, viverra metus ac,
-                fermentum libero. Integer lobortis enim ac arcu malesuada ultrices. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
+                Providing alternative text (alt text) for images is an essential part of accessibility. Alt text allows
+                screen readers to describe images to visually impaired users, ensuring that they don’t miss out on
+                important information conveyed through visuals.
             </p>
 
+            <h3 id="aria-roles-attributes" class="subsection">ARIA Roles and Attributes</h3>
+            <p>
+                ARIA (Accessible Rich Internet Applications) roles and attributes provide additional information about
+                elements to assistive technologies. For example, setting <code>role="navigation"</code> on a
+                <code>nav</code> element helps screen readers identify it as a navigation section. However, use ARIA
+                sparingly and only when native HTML elements don’t provide enough context.
+            </p>
 
             <hr>
-            <h3 id="fontsize" class="section">Common Font Sizing Approaches</h3>
-            <h4 id="pixels"><code>px</code> (pixels)</h4>
+            <h2 id="fontsize" class="section">Accessible Text and Layout Techniques</h2>
+            <h3 id="accessible-font-size" class="subsection">Accessible Font Size</h3>
             <p>
-                Pixels are the simplest way to hard code your font size. By default the browser sets the root font size
-                to <code>16px</code>, but you can change the font size in the <code>body</code> element or any other
-                HTML
-                element by setting <code>font-size</code> to any number of <code>px</code>.
+                Ensuring that text is readable is a critical part of accessibility. A minimum font size of 16px is
+                generally recommended, as it provides sufficient readability for most users. Adjust font sizes relative
+                to the context, ensuring that body text is easy to read and headings are clearly distinguishable.
             </p>
-            <h4 id="em"><code>em</code></h4>
+            <h3 id="relative-units" class="subsection">Relative Units for Accessibility</h3>
             <p>
-                <code>em</code> units size font relative to the parent element. For example, if the <code>body</code>
-                element is <code>16px</code>, and a nested <code>div</code> element's font size is set to
-                <code>1.5em</code>,
-                the browser will multiply <code>16px</code> x 1.5, resulting in <code>24px</code> font in the
-                <code>div</code>.
+                Using relative units like <code>em</code> and <code>rem</code> is preferred for creating accessible
+                layouts. These units scale according to user settings, allowing text and other elements to adjust based
+                on the root font size. This approach respects user preferences and makes websites more adaptable to
+                different screen sizes and resolutions.
             </p>
-            <h4 id="rem"><code>rem</code> (root em)</h4>
+            <h3 id="rem-scaling" class="subsection">Rem for Consistent Scaling</h3>
             <p>
-                Root <code>em</code> units are similar to em, but they are relative to the root font size instead of the
-                parent element of whatever is being styled. For example, if the root font size (the font size of the
-                body element) is set to <code>16px</code>, and we have a <code>p</code> element nested many layers down
-                with
-                a <code>font-size</code> set to <code>2rem</code>, that paragraph will have <code>32px</code> font. If
-                the
-                body font size ever changes, this paragraph will also change accordingly.
+                The <code>rem</code> unit is particularly useful for accessibility as it references the root font size,
+                allowing all elements to scale consistently. For example, if the base font size is 16px and you set an
+                element to <code>2rem</code>, it will render at 32px. This makes it easier to manage font sizes and
+                ensures a consistent experience for users who adjust text size in their browser settings.
             </p>
             <hr>
 
 
-            <h4 id="usewhich" class="section">Which one do I use?</h4>
+            <h3 id="best-approach" class="section">Which Approach is Best for Accessibility?</h3>
+
             <p>
-                Great question! Generally, people try to stick to using <code>em</code> or <code>rem</code> over
-                <code>px</code>, since they make responsive typography that scales up and down across different device
-                widths much easier. Using px for your font sizes is not as dynamic, and you may find that writing media
-                queries to update all the various element font sizes in pixels at different screen widths is not the
-                most scalable approach to typography.
+                Generally, using relative units like <code>em</code> and <code>rem</code> is recommended for
+                accessibility. Unlike fixed pixel values, these units allow text and layout elements to respond to user
+                preferences. This flexibility is particularly important for users who need larger fonts or different
+                screen settings.
             </p>
             <p>
-                Between <code>em</code> and <code>rem</code>, rem has a nice advantage of all elements being relative to
-                one single root font value, where nested elements with parent/child font size dependencies can still be
-                hard
-                to manage with em units. When writing responsive styles, rem allows you to simply update the root font
-                size
-                at different screen sizes and all elements using rem units will adjust themselves accordingly creating a
-                super easy-to-manage typography size system.
+                Between <code>em</code> and <code>rem</code>, <code>rem</code> is often preferred because it creates a
+                single, root-based scaling system across the entire document. This makes it easier to adjust font sizes
+                globally by modifying the root size, which will automatically scale all elements using <code>rem</code>
+                units.
             </p>
             <p>
-                In small projects you may not have issues hard coding pixelage, but it's always important to understand
-                the drawbacks of writing styles that may not be responsive or dynamic.
+                While pixel-based units can be useful in small, controlled projects, it’s important to understand that
+                they may not provide a fully accessible experience. Opting for responsive, scalable units helps create a
+                more inclusive design that accommodates various user needs and device types.
+
             </p>
         </main>
 
@@ -239,7 +243,7 @@
         </aside>
 
         <footer>
-            <p>&copy; 2050 Typography Blog Post. All Rights Reserved.</p>
+            <p>&copy; 2024 All About Accessbility. All Rights Reserved.</p>
         </footer>
     </div>
 </body>
