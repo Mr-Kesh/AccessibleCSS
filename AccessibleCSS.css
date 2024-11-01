@@ -12,14 +12,9 @@ body {
 }
 
 
-hr {
-    width: 20%; 
-    height: 1px; 
-    background-color: white; 
-    border: none; 
-    margin: 20px 0; 
+.content h2 {
+    font-size: 40px;
 }
-
 
 h1,
 h2,
@@ -43,11 +38,12 @@ h1 {
 h2 {
     font-size: 50px;
     letter-spacing: -0.5px;
+    margin-bottom: 10px;
 }
 
 
 h3 {
-    font-size: 38px;
+    font-size: 30px;
     letter-spacing: 0px;
 }
 
@@ -70,6 +66,40 @@ h6 {
 }
 
 
+hr {
+
+    height: 4px;
+    background-image: linear-gradient(to right, #886dbc, #5a2eb5); /* Gradient color */
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+hr.white-hr {
+    width: 50% ; 
+    height: 2px;
+    background-color: white;
+    background-image: none; /* Remove gradient if applied */
+    box-shadow: none; /* Remove shadow */
+    margin: 20px auto; /* Center the white hr */
+}
+
+
+.quote {
+    border-left: 3px solid #6a0dad;
+    padding-left: 15px; /* Space between the line and the text */
+    margin: 20px 0; /* Space above and below the blockquote */
+    font-style: italic; /* Makes the text italicized */
+}
+
+.quote p cite {
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
 .section {
     margin-top: 100px;
 }
@@ -83,9 +113,11 @@ h6 {
 
 .nav ul li a:hover {
     color: white; 
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
-                 0 0 15px rgba(255, 255, 255, 0.6), 
-                 0 0 25px rgba(255, 255, 255, 0.4); 
+    text-shadow: 
+        0 0 8px rgba(255, 255, 255, 0.8),           
+        0 0 15px rgba(255, 255, 255, 0.6),         
+        0 0 25px rgba(255, 255, 255, 0.4)
+    ; 
 }
 
 
@@ -167,6 +199,10 @@ details ul li a {
 
 .aside-left {
     padding-right: 10px;
+}
+
+.aside-left details ul li {
+    list-style-type: none;
 }
 
 
