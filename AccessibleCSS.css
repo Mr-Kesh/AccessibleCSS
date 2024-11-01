@@ -76,7 +76,7 @@ h6 {
 
 
 .nav ul li a:hover {
-    color: #ff7f50;
+    color: red;
 }
 
 
@@ -86,13 +86,13 @@ h6 {
 
 
 code {
-    color: #e95400; 
+    color: red; 
     font-weight: bold;
 }
 
 
 aside ul li a:hover {
-    color: #ff7f50;
+    color: red;
 }
 
 
@@ -102,12 +102,12 @@ summary {
 
 
 aside ul li {
-    color: #ff7f50;
+    color: red;
     list-style-type: disc;
 }
 
 
-details ul li a{
+details ul li a {
     text-decoration: none;
     color: black;
 }
@@ -144,7 +144,7 @@ details ul li a{
 
 
 .orange {
-    color: #ff7f50;
+    color: red;
 }
 
 
