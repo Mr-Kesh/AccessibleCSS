@@ -196,6 +196,10 @@ details ul li a {
     color: #5a2eb5;
 }
 
+.element-invisible {
+    display: none;
+}
+
 
 .aside-left {
     padding-right: 10px;
