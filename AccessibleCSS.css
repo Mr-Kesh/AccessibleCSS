@@ -69,9 +69,9 @@ h6 {
 hr {
 
     height: 4px;
-    background-image: linear-gradient(to right, #886dbc, #5a2eb5); /* Gradient color */
+    background-image: linear-gradient(to right, #886dbc, #5a2eb5); 
     margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
     width: 100%;
     margin-top: 50px;
 
@@ -81,17 +81,17 @@ hr.white-hr {
     width: 50% ; 
     height: 2px;
     background-color: white;
-    background-image: none; /* Remove gradient if applied */
-    box-shadow: none; /* Remove shadow */
-    margin: 20px auto; /* Center the white hr */
+    background-image: none; 
+    box-shadow: none; 
+    margin: 20px auto; 
 }
 
 
 .quote {
     border-left: 3px solid #6a0dad;
-    padding-left: 15px; /* Space between the line and the text */
-    margin: 20px 0; /* Space above and below the blockquote */
-    font-style: italic; /* Makes the text italicized */
+    padding-left: 15px; 
+    margin: 20px 0; 
+    font-style: italic;
 }
 
 .quote p cite {
@@ -240,9 +240,9 @@ details ul li a {
 
 .content {
     grid-area: content;
-    max-width: 900px; /* Remove restriction on width */
+    max-width: 900px; 
     padding: 32px;
-    margin: 0 auto; /* Remove auto margin */
+    margin: 0 auto;
     font-family: Mukta, sans-serif;
 }
 
